@@ -1,0 +1,185 @@
+* {
+  font-family: 'Amatic SC', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar settings */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #007fc9;
+}
+
+span {
+  font-size: 2rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #40d145;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+button:hover {
+  background-color: #45a049;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 0 auto; /* Center the board horizontally */
+  max-width: 320px; /* Set a maximum width for the board */
+  margin-bottom: 20px; /* Add some spacing between the board and the score */
+}
+
+.status {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.score {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid white;
+  cursor: pointer;
+  margin-bottom: -0.25rem;
+}
+
+.restart-btn {
+  width:fit-content;
+  margin-top: 1rem;
+  padding: 10px 20px;
+}
+
+/* =================================================================================================================================== */
+  
+.welcome-page {
+  max-width: 400px;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+  
+.welcome-page h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+  
+.player-input {
+  margin-bottom: 20px;
+}
+  
+.player-input label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+  
+.player-input input[type="text"] {
+  width: 90%;
+  padding: 1rem;
+  margin-top:1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: dimgray;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+  
+.player-input input[type="text"]:focus {
+  border-color: #45a049;
+}
+  
+.color-selection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+  
+.color-button {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.color-button.selected {
+  border: 3px solid #333;
+  transform: scale(1.1);
+}
+  
+@media only screen and (max-width: 480px) {
+  .welcome-page {
+    margin: 10px;
+    padding: 20px;
+  }
+  .welcome-page h2 {
+    font-size: 28px;
+  }
+  .player-input label {
+    font-size: 16px;
+  }
+  .player-input input[type="text"] {
+    font-size: 14px;
+  }
+  .color-button {
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+  }
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
