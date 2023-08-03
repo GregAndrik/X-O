@@ -158,12 +158,19 @@ button:hover {
   transform: scale(1.1);
 }
   
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
+  .welcome-page h2 {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .welcome-page {
     margin: 10px;
     padding: 20px;
   }
   .welcome-page h2 {
+    margin-top: 2rem;
     font-size: 28px;
   }
   .player-input label {
