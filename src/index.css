@@ -20,11 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* scrollbar settings */
-::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   display: flex;
   justify-content: center;
