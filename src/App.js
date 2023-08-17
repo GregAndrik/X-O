@@ -1,6 +1,7 @@
 import './index.css'
 import React, { useState } from 'react';
 import WelcomePage from './WelcomePage';
+import Footer from './Footer';
 
 const initialBoard = Array(9).fill(null);
 
@@ -95,11 +96,14 @@ const App = () => {
   return (
     <div className="app">
       {!isGameStarted ? (
-        <WelcomePage
-          onStartGame={handleStartGame}
-          defaultPlayerXColor={playerXColor}
-          defaultPlayerOColor={playerOColor}
-        />
+        <>
+          <WelcomePage
+            onStartGame={handleStartGame}
+            defaultPlayerXColor={playerXColor}
+            defaultPlayerOColor={playerOColor}
+          />
+          <Footer/>
+        </>
       ) : (
         <>
           <div className='score'>

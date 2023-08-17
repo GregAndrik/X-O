@@ -52,7 +52,7 @@ const WelcomePage = ({ onStartGame }) => {
       <h2>Greg's Tic-Tac-Toe!</h2>
       <div className='player-input'>
         <label>
-          Player X Name & color:
+          Player X Name & color
           <input type='text' maxLength={20} value={playerXName} onChange={(e) => setPlayerXName(e.target.value)} />
         </label>
         <div className='color-selection'>
@@ -68,7 +68,7 @@ const WelcomePage = ({ onStartGame }) => {
       </div>
       <div className='player-input'>
         <label>
-          Player O Name & color:
+          Player O Name & color
           <input type='text' maxLength={20} value={playerOName} onChange={(e) => setPlayerOName(e.target.value)} />
         </label>
         <div className='color-selection'>
