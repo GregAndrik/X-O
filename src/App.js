@@ -1,6 +1,7 @@
 import './index.css'
 import React, { useState } from 'react';
 import WelcomePage from './WelcomePage';
+import Header from './Header';
 import Footer from './Footer';
 
 const initialBoard = Array(9).fill(null);
@@ -97,6 +98,7 @@ const App = () => {
     <div className="app">
       {!isGameStarted ? (
         <>
+          <Header/>
           <WelcomePage
             onStartGame={handleStartGame}
             defaultPlayerXColor={playerXColor}

@@ -49,7 +49,6 @@ const WelcomePage = ({ onStartGame }) => {
 
   return (
     <div className='welcome-page'>
-      <h2>Greg's Tic-Tac-Toe!</h2>
       <div className='player-input'>
         <label>
           Player X Name & color
