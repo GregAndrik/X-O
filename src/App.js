@@ -1,8 +1,7 @@
-import './index.css'
 import React, { useState } from 'react';
-import WelcomePage from './WelcomePage';
-import Header from './Header';
-import Footer from './Footer';
+import WelcomePage from './components/WelcomePage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const initialBoard = Array(9).fill(null);
 

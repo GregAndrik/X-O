@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 * {
+  font-size: 1rem;
   box-sizing: border-box;
 }
 
@@ -21,13 +22,16 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
   background-color: var(--color-primary);
+}
+
+.welcome-page {
+  max-width: 25rem;
+  margin: 0.65rem auto;
+  padding: 2rem;
+  border-radius: 0.65rem;
+  box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
+  background-color: var(--color-white);
 }
 
 span {
@@ -97,15 +101,6 @@ button:hover {
   padding: 0.65rem 1.25rem;
 }
   
-.welcome-page {
-  max-width: 25rem;
-  margin: 0.65rem auto;
-  padding: 2rem;
-  border-radius: 0.65rem;
-  box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
-  background-color: var(--color-white);
-}
-  
 .player-input {
   margin-bottom: 1.25rem;
 }
@@ -159,99 +154,27 @@ button:hover {
 }
 
 .header {
-  max-width: 25rem;
-  font-size: 1.8rem;
-  font-weight: bold;
+  background-color: var(--color-primary);
   color: var(--color-white);
-  margin-bottom: 5rem;
+  padding: 1rem;
+  font-size: 2rem;
   text-align: center;
-  margin-top: 1.25rem;
+}
+  
+.title h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-footer {
-  text-align: center;
-  background: var(--color-primary);
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
   padding: 1rem 0;
-  font-size: 0.9rem;
-  padding-top: 3rem;
+  text-align: center;
   border-top: 1px solid var(--color-white);
 }
-
-.footer_copyright {
-  color: var(--color-white);
-  font-size: 1.5rem;
-}
-
-@media screen and (min-height:900px) and (max-height: 1400px) {
-  body {
-    height: 95vh;
-  }
-}
-
-@media screen and (min-height:800px) and (max-height: 1200px) {
-  body {
-    height: 120vh;
-  }
-}
-
-@media screen and (min-height:800px) and (max-height: 1024px) {
-  body {
-    height: 125vh;
-  }
-}
-
-@media screen and (max-height: 860px) {
-  body {
-    height: 155vh;
-  }
-}
-
-@media screen and (max-height: 740px) {
-  body {
-    height: 99%;
-    width: 99%;
-  }
-}
-
-@media screen and (max-height: 600px) and (min-width: 1024px) {
-  body {
-    height: 99%;
-    width: 99%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .welcome-page {
-    margin: 0.65rem;
-    padding: 1.25rem;
-  }
-
-  .player-input label {
-    font-size: 1rem;
-  }
-
-  .player-input input[type="text"] {
-    font-size: 0.9rem;
-  }
-
-  .color-button {
-    width: 3.2rem;
-    height: 3.2rem;
-    margin: 0.4rem;
-  }
-
-  button {
-    padding: 0.75rem;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header {
-    font-size: 1.5rem;
-  }
-
-  .footer_copyright {
-    font-size: 1.2rem;
-  }
+  
+.footer-content {
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }

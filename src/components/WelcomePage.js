@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const ColorButton = ({ color, isSelected, onClick }) => {
+function ColorButton ({ color, isSelected, onClick }) {
   return (
     <button
       className={`color-button ${isSelected ? 'selected' : ''}`}
