@@ -1,8 +1,10 @@
+import './header.css';
+
 function Header() {
   return (
     <header id="#top" className='header'>
       <div className='title'>
-        <h1>Another Tic-tac-toe game...</h1>
+        <h1>G-Tic-Tac-Toe</h1>
       </div>
     </header>
   );

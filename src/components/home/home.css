@@ -1,0 +1,47 @@
+.player-input label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+  
+.player-input input[type="text"] {
+    width: 90%;
+    padding: 1rem;
+    margin-top:1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-grey);
+    border: 0.125rem solid var(--color-light);
+    border-radius: 0.3rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+  
+.player-input input[type="text"]:focus {
+    border-color: var(--color-tint);
+}
+  
+.color-selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.7rem;
+}
+  
+.color-button {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px var(--color-shadow);
+}
+  
+.color-button.selected {
+    border: 3px solid var(--color-tint);
+    transform: scale(1.1);
+}

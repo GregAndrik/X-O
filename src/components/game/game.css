@@ -1,0 +1,41 @@
+.board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.board {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 0.3rem;
+    margin: 0 auto; /* Center the board horizontally */
+    max-width: 20rem; /* Set a maximum width for the board */
+}
+
+.score-status {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 0.125rem solid var(--color-white);
+    cursor: pointer;
+    margin-bottom: -0.25rem;
+}
+
+.restart-btn {
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.65rem 1.25rem;
+}

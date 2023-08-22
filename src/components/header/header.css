@@ -1,0 +1,12 @@
+.header {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+    
+.title h1 {
+    margin: 0;
+    font-size: 2rem;
+}
