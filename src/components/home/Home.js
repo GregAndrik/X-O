@@ -83,10 +83,10 @@ const WelcomePage = ({ onStartGame }) => {
 
         {!isPlayerOReady && isPlayerXReady && (
           <div className='player-input'>
-          <label>
-            Player O Name & color
-            <input type='text' maxLength={20} value={playerOName} onChange={(e) => setPlayerOName(e.target.value)} />
-          </label>
+            <label>
+              Player O Name & color
+              <input type='text' maxLength={20} value={playerOName} onChange={(e) => setPlayerOName(e.target.value)} />
+            </label>
           <div className='color-selection'>
             {availableColors.map((color) => (
               <ColorButton
