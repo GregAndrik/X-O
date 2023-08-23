@@ -15,9 +15,6 @@
     --color-accent: #40d145; /* button */
     --color-tint: #45a049; /* button hover */
     --color-shadow: rgba(0, 0, 0, 0.1);
-
-    --container-width-md: 80%;
-    --container-height-md: 80%;
 }
 
 html {
@@ -52,17 +49,17 @@ button:hover {
     background-color: var(--color-tint);
 }
 
-.home-btn {
+.home-button {
     margin: 1.5rem 0 1rem;
 }
 
-.start-btn {
+.start-button {
     width: 100%;
     padding: 1rem;
     margin-bottom: 0.6rem;
 }
 
-.btn-container {
+.button-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -84,52 +81,52 @@ button:hover {
     background-color: var(--color-white);
 }
 
-
-@media (max-width: 600px) {
-    :root {
-        --container-width-md: 90%; /* Make container wider for small screens */
-    }
-  
+/*================================================================= MEDIA QUERIES =========================================================================*/
+@media screen and (max-height: 600px) {
     .home-container {
-        padding: 1rem; /* Add more padding for better readability on small screens */
-    }
-  
-    button {
-        width: 90%; /* Adjust button width for better touch interaction */
-    }
-  }
-  
-  @media (min-width: 601px) and (max-width: 900px) {
-    :root {
-        --container-width-md: 70%; /* Moderate container width for medium screens */
+        height: 98%;
     }
 }
 
 @media (max-width: 600px) {
     .home-container {
-        padding: 1rem; /* Add more padding for better readability on small screens */
+        padding: 1rem;
+        width: 90%; 
     }
   
     button {
-        width: 80%; /* Adjust button width for better touch interaction */
+        width: 80%;
     }
 }
 
-@media (max-width: 280px) {
-    * {
-        font-size: 0.8rem;
-    }
-
-    :root {
-        --container-width-md: 95%;
+@media screen and (max-width: 280px) {
+    .player-input label {
+        font-size: 1.1rem;
     }
   
+    .board {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-template-columns: repeat(3, 60px);
+        grid-gap: 0.3rem;
+    }
+
+    .cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        margin-bottom: -0.25rem;
+    }
+
     .home-container {
-        padding: 0.5rem; /* Adjust padding for better use of limited space */
+        padding: 0.5rem; 
     }
   
     button {
-        width: 60%; /* Make buttons full width for better touch interaction */
+        width: 60%; 
         font-size: 1rem;
     }
 }

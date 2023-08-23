@@ -151,12 +151,12 @@ const Game = () => {
               )}
             </div>
 
-            <div className='btn-container'>
-            <button className='game-btn' onClick={handleBackToSelection}>Back</button>
+            <div className='button-container'>
+            <button className='game-button' onClick={handleBackToSelection}>Back</button>
 
               {(calculateWinner(board) || isBoardFull) && (
                 <>
-                  <button className='game-btn' onClick={handleRestartClick}>Next Round</button>
+                  <button className='game-button' onClick={handleRestartClick}>Next Round</button>
                 </>
               )}
             </div>
