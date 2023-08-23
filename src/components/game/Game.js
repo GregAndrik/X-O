@@ -18,6 +18,17 @@ const Game = () => {
   const [scoreO, setScoreO] = useState(0); // Score for player O
   const [roundNumber, setRoundNumber] = useState();
 
+  const handleBackToSelection = () => {
+    setBoard(initialBoard);
+    setIsGameStarted(false);
+    setPlayerXName('');
+    setPlayerOName('');
+    setPlayerXColor('');
+    setPlayerOColor('');
+    setScoreO(0);
+    setScoreX(0);
+  }; 
+
   const handleCellClick = (index) => {
     if (calculateWinner(board) || board[index]) return;
 
@@ -82,7 +93,7 @@ const Game = () => {
       [2, 5, 8],
       [0, 4, 8],
       [2, 4, 6],
-    ];
+    ];   
 
     for (const pattern of winPatterns) {
       const [a, b, c] = pattern;
@@ -140,11 +151,15 @@ const Game = () => {
               )}
             </div>
 
-            {(calculateWinner(board) || isBoardFull) && (
-            <button className='restart-btn' onClick={handleRestartClick}>
-              Next Round
-            </button>
-          )}
+            <div className='btn-container'>
+            <button className='game-btn' onClick={handleBackToSelection}>Back</button>
+
+              {(calculateWinner(board) || isBoardFull) && (
+                <>
+                  <button className='game-btn' onClick={handleRestartClick}>Next Round</button>
+                </>
+              )}
+            </div>
           </div>
         </>
       )}

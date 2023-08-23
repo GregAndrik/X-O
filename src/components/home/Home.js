@@ -77,7 +77,7 @@ const WelcomePage = ({ onStartGame }) => {
                 />
               ))}
             </div>
-            <button onClick={handlePlayerXReady} disabled={!playerXName.trim() || !playerXColor.trim() || isPlayerXReady}>
+            <button className='home-btn' onClick={handlePlayerXReady} disabled={!playerXName.trim() || !playerXColor.trim() || isPlayerXReady}>
               Player X Ready
             </button>
           </div>
@@ -99,14 +99,14 @@ const WelcomePage = ({ onStartGame }) => {
               />
             ))}
           </div>
-          <button onClick={handlePlayerOReady} disabled={!playerOName.trim() || !playerOColor.trim() || isPlayerOReady}>
+          <button className='home-btn' onClick={handlePlayerOReady} disabled={!playerOName.trim() || !playerOColor.trim() || isPlayerOReady}>
             Player O Ready
           </button>
         </div>
         )}
 
         {isPlayerXReady && isPlayerOReady && (
-          <button onClick={handleStartGame} disabled={!isPlayerXReady || !isPlayerOReady}>
+          <button className='start-btn' onClick={handleStartGame} disabled={!isPlayerXReady || !isPlayerOReady}>
             Start Game
           </button>
         )}
