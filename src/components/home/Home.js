@@ -37,8 +37,6 @@ const WelcomePage = ({ onStartGame }) => {
   const handleStartGame = () => {
     if (isPlayerXReady && isPlayerOReady) {
       onStartGame(playerXName, playerOName, playerXColor, playerOColor);
-    } else {
-      alert("Both players need to be ready before starting the game.");
     }
   };
 

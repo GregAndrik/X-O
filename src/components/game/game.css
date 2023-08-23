@@ -7,8 +7,7 @@
 }
 
 .board {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-gap: 0.3rem;

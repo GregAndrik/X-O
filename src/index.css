@@ -49,10 +49,6 @@ button:hover {
     background-color: var(--color-tint);
 }
 
-.home-button {
-    margin: 1.5rem 0 1rem;
-}
-
 .start-button {
     width: 100%;
     padding: 1rem;
