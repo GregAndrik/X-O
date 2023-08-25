@@ -105,7 +105,7 @@ const Game = () => {
     return null;
   };
 
-  return (
+  return ( 
     <>
       {!isGameStarted ? (
         <>

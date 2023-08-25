@@ -11,7 +11,7 @@ function ColorButton ({ color, isSelected, onClick }) {
   );
 };
 
-const WelcomePage = ({ onStartGame }) => {
+const Home = ({ onStartGame }) => {
   const [playerXName, setPlayerXName] = useState('');
   const [playerOName, setPlayerOName] = useState('');
   const [playerXColor, setPlayerXColor] = useState(''); // Default color for X
@@ -113,4 +113,4 @@ const WelcomePage = ({ onStartGame }) => {
   );
 };
 
-export default WelcomePage;
+export default Home;

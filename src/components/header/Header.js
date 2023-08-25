@@ -1,6 +1,6 @@
 import './header.css';
 
-function Header() {
+const Header = () => {
   return (
     <header className='header'>
       <div className='title'>
@@ -9,4 +9,5 @@ function Header() {
     </header>
   );
 }
+
 export default Header;
