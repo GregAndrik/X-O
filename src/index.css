@@ -77,7 +77,6 @@ button:hover {
     background-color: var(--color-white);
 }
 
-/*================================================================= MEDIA QUERIES =========================================================================*/
 @media screen and (max-height: 600px) {
     .home-container {
         height: 98%;
