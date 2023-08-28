@@ -16,7 +16,7 @@
     border: 0.125rem solid var(--color-light);
     border-radius: 0.3rem;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: var(--transition);
 }
   
 .player-input input[type="text"]:focus {
@@ -37,7 +37,7 @@
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: var(--transition);
     box-shadow: 0 4px 8px var(--color-shadow);
 }
   

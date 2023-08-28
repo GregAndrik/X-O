@@ -15,6 +15,8 @@
     --color-accent: #40d145; /* button */
     --color-tint: #45a049; /* button hover */
     --color-shadow: rgba(0, 0, 0, 0.1);
+
+    --transition: all 400ms ease;
 }
 
 html {
@@ -41,12 +43,12 @@ button {
     border-radius: 0.3rem;
     cursor: pointer;
     background-color: var(--color-accent);
-    transition: background-color 0.3s ease;
+    transition: var(--transition);
     box-shadow: 0 4px 8px var(--color-shadow);
 }
-  
-button:hover {
-    background-color: var(--color-tint);
+
+button:active {
+    transform: scale(1.05); /* Magnification effect */
 }
 
 .start-button {
@@ -75,6 +77,18 @@ button:hover {
     border-radius: 0.65rem;
     box-shadow: 0 4px 8px var(--color-shadow);
     background-color: var(--color-white);
+}
+
+@media screen and (min-width: 600px) {
+    button:hover {
+        background-color: var(--color-tint);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    button:active {
+        background-color: var(--color-tint);  
+    }
 }
 
 @media screen and (max-height: 600px) {
