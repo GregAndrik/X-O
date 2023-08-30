@@ -4,6 +4,7 @@
 * {
     font-size: 1rem;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 :root {
@@ -109,7 +110,7 @@ button:active {
     }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 300px) {
     .player-input label {
         font-size: 1.1rem;
     }
